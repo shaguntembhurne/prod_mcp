@@ -1,0 +1,35 @@
+cat >> .gitignore <<'EOF'
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+venv_broken_py312/
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Frontend
+node_modules/
+dist/
+
+# Models and generated data
+models/
+*.safetensors
+*.gguf
+*.bin
+*.pkl
+
+# Local logs
+*.log
+.DS_Store
+EOF
+# Missing/private data.gov.in registry and generated search indexes
+mcp_data_gov_in/data/data_gov_in_api_registry.json
+mcp_data_gov_in/data/embeddings.pkl
+mcp_data_gov_in/data/faiss_index.bin
+mcp_data_gov_in/data/metadata.pkl

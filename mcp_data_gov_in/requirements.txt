@@ -1,0 +1,20 @@
+# =============================================================================
+# MCP Data.gov.in Server Dependencies (Python >= 3.12)
+# Derived from pyproject.toml and uv.lock
+# =============================================================================
+
+# Core MCP & API Server
+fastmcp>=3.4.2
+pydantic>=2.10.0
+starlette>=0.27.0
+httpx>=0.28.1
+
+# Semantic Search, Embeddings & Data Analysis
+faiss-cpu>=1.8.0
+sentence-transformers>=2.7.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Testing
+pytest>=8.2.1
+pytest-asyncio>=0.23.6

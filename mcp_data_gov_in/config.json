@@ -1,0 +1,36 @@
+{
+  "mcp_server": {
+    "server_name": "data-gov-in-mcp",
+    "registry_last_updated": "2025-07-08",
+    "rate_limit": {
+      "requests_per_minute": 60,
+      "burst_limit": 10
+    }
+  },
+  "data_api": {
+    "default_download_limit": 1000,
+    "max_download_limit": 10000,
+    "default_inspect_sample_size": 3,
+    "request_timeout": 30,
+    "pagination_limit": 1000,
+    "max_total_records": 100000
+  },
+  "semantic_search": {
+    "model_name": "all-MiniLM-L6-v2",
+    "title_weight": 3,
+    "min_similarity_score": 0.1,
+    "min_display_similarity_score": 0.25,
+    "results_per_query": 10,
+    "max_queries_per_search": 5,
+    "detailed_search_limit": 10,
+    "max_search_limit": 50,
+    "cache_embeddings": true,
+    "show_progress": true,
+    "guidance_high_result_threshold": 25,
+    "guidance_medium_result_threshold": 10,
+    "encourage_aggregation": true
+  },
+  "security": {
+    "max_query_length": 200
+  }
+}

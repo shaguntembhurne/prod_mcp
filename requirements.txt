@@ -1,0 +1,24 @@
+# =============================================================================
+# Django REST Framework Backend Dependencies
+# =============================================================================
+
+# Django & REST Framework
+Django==5.2.18
+djangorestframework==3.18.3
+djangorestframework_simplejwt==5.5.1
+django-cors-headers==4.9.0
+asgiref==3.12.1
+sqlparse==0.6.0
+PyJWT==2.15.1
+typing_extensions==4.16.0
+
+# Configuration & Environment
+python-decouple==3.8
+python-dotenv==1.2.4
+
+# MCP Protocol Client & HTTP Client (chat_app)
+mcp==2.3.0
+httpx==0.28.1
+
+# Optional Database Driver (uncomment if using PostgreSQL via DATABASE_URL)
+# psycopg2-binary>=2.9.9

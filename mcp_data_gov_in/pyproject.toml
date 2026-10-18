@@ -1,0 +1,16 @@
+[project]
+name = "mcp-data-gov-in"
+version = "2.0.0"
+description = "MCP server for data.gov.in, implementing semantic search for dataset discovery and enabling analysis."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "faiss-cpu>=1.8.0",
+    "fastmcp>=3.4.2",
+    "httpx>=0.28.1",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "pytest>=8.2.1",
+    "pytest-asyncio>=0.23.6",
+    "sentence-transformers>=2.7.0",
+]
